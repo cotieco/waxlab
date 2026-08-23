@@ -394,6 +394,7 @@ h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
   border: 1.5px solid currentColor;
   white-space: nowrap;
 }
+.chip-blue { color: var(--cornflower-deep); background: rgba(100, 149, 237, 0.1); }
 
 /* ---------- 02 · Rates — blue sheet ---------- */
 #s02 {
