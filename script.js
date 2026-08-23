@@ -38,6 +38,7 @@
   var statusEl = document.getElementById("formStatus");
   var phoneInput = document.getElementById("custPhone");
   var emailInput = document.getElementById("custEmail");
+  var noteInput = document.getElementById("custNote");
   var dropMsg = document.getElementById("dropMsg");
 
   dateInput.min = new Date().toISOString().split("T")[0];
@@ -151,7 +152,8 @@
       contact_pref: currentContact,
       contact_value: contact,
       location: currentLocation === "boulder" ? "Boulder" : "Louisville",
-      preferred_date: date
+      preferred_date: date,
+      note: noteInput.value.trim()
     }).then(function () {
       dropMsg.classList.remove("hidden", "err");
       dropMsg.textContent = confirmText;
@@ -176,7 +178,7 @@
        Public key -> Account > General
        Service ID  -> Email Services (the Gmail connection)
        Template ID -> Email Templates (create one that sends to waxlabcolorado@gmail.com
-       and uses the params: name, service, contact_pref, contact_value, location, preferred_date)
+       and uses the params: name, service, contact_pref, contact_value, location, preferred_date, note)
   ==================================================== */
   var EMAILJS_PUBLIC_KEY = "xyqrGi8m8eLCj7jvz";
   var EMAILJS_SERVICE_ID = "service_j671dne";

@@ -438,7 +438,8 @@ h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
 .slip-form { display: grid; gap: 6px; align-content: start; }
 .slip-form label { font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; color: var(--cornflower-deep); margin-top: 8px; }
 .slip-form input,
-.slip-form select {
+.slip-form select,
+.slip-form textarea {
   font: 500 1.05rem var(--sans);
   color: var(--ink);
   background: transparent;
@@ -449,9 +450,11 @@ h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
   transition: border-color 0.15s;
 }
 .slip-form input:focus,
-.slip-form select:focus { outline: none; border-bottom-color: var(--cornflower); border-bottom-style: solid; }
+.slip-form select:focus,
+.slip-form textarea:focus { outline: none; border-bottom-color: var(--cornflower); border-bottom-style: solid; }
 .slip-form input.invalid { border-bottom-color: var(--replace); border-bottom-style: solid; }
 .slip-form select { cursor: pointer; }
+.slip-form textarea { resize: vertical; font-family: inherit; }
 .pref-toggle { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 2px; }
 .pref-btn {
   font: 700 0.74rem var(--mono);
