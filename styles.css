@@ -388,13 +388,12 @@ h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
   margin: 16px 0;
 }
 .limit-chip {
-  font: 700 clamp(0.6rem, 1.3vw, 0.78rem) var(--mono);
-  padding: 5px clamp(7px, 1.1vw, 10px);
+  font: 700 clamp(0.75rem, 1.6vw, 0.95rem) var(--mono);
+  padding: 7px clamp(10px, 1.4vw, 14px);
   border-radius: 999px;
   border: 1.5px solid currentColor;
   white-space: nowrap;
 }
-.chip-blue { color: var(--cornflower-deep); background: rgba(100, 149, 237, 0.1); }
 
 /* ---------- 02 · Rates — blue sheet ---------- */
 #s02 {
